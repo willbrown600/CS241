@@ -467,8 +467,8 @@ class Game(arcade.Window):
         :param height: Screen height
         """
         super().__init__(width, height)
-        #self.background = arcade.load_texture("images/galaxy_background.png")
-        arcade.set_background_color(arcade.color.SMOKY_BLACK)
+        self.background = arcade.load_texture("images/galaxy_%20background.jpg")
+        #arcade.set_background_color(arcade.color.SMOKY_BLACK)
 
         self.held_keys = set()
         self.lives = 5
